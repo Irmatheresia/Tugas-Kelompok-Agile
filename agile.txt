@@ -1,0 +1,36 @@
+card isinya adalah = product definition, product backlog,sprint backlog, to do, in progress, to verify
+labels merah = prioritas tinggi 
+checklist = list yang ingin dilakukan dan di tandai jika sudah selesai
+date = untuk ngasih tanggal deadline 
+pakai card dan card bisa di pindah pindahkan 
+
+
+auto generate pada git sehingga tidak perlu menggabungkan secara manual
+
+
+save pada git adalah commit
+kirim file dari loacal ke server = push 
+pull = melanjutkan kerjaan yang sudah dipush/tarik data dari server ke local data (mengunduh)
+
+penerapan git pada kolaborasi
+1. 1 orang creat repo(local git init > remote repo github )
+2. create file
+3. commit 
+4. push data 
+
+jika mau melanjutkan kerjaan sebelum dipush di pull dulu agar mengambil data yang terbaru dahulu sehingga ketika ada team yang menambah data tidak kehapus 
+
+--global untuk penyimpanan secara global
+
+
+git config --global core.editor "code --wait"
+git config --list = untuk ngecek apa saja yang sudah di config 
+
+jika sudah git init akan terdapat .git dan ini yang dimaksud dengan repository dan jangan dihapus karena jika dihapus semua history akan kehapus. jika menambah file harus di bawah .git 
+
+selama jenis file untracked semua perubahan tidak terdeteksi di version control.
+jadi ubah file kita menjadi tracked dengan cara git add  
+unmodifed = file yang belum di edit 
+modifed = sudah terjadi pengeditan kemudian di git add lagi kemudian masuk ke staged dan jika sudah di commid dia akan kembali menjadi unmodifed lagi.
+
+jika ada perubahan file lebih dari 1 pake git add . (akan menyimpan semua file)
