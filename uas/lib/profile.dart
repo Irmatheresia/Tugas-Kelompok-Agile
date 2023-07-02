@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/jadwal.dart';
 import 'package:uas/kategori.dart';
 import 'package:uas/login.dart';
 
@@ -47,11 +48,10 @@ class ProfilePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), // Warna bayangan
-                        spreadRadius: 2, // Jarak penyebaran bayangan
-                        blurRadius: 5, // Jarak pelebaran bayangan
-                        offset: Offset(
-                            0, 3), // Posisi bayangan relatif terhadap container
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                        offset: Offset(0, 3),
                       ),
                     ],
                     shape: BoxShape.rectangle,
@@ -93,11 +93,10 @@ class ProfilePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), // Warna bayangan
-                        spreadRadius: 2, // Jarak penyebaran bayangan
-                        blurRadius: 5, // Jarak pelebaran bayangan
-                        offset: Offset(
-                            0, 3), // Posisi bayangan relatif terhadap container
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                        offset: Offset(0, 3),
                       ),
                     ],
                     shape: BoxShape.rectangle,
@@ -138,11 +137,10 @@ class ProfilePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), // Warna bayangan
-                        spreadRadius: 2, // Jarak penyebaran bayangan
-                        blurRadius: 5, // Jarak pelebaran bayangan
-                        offset: Offset(
-                            0, 3), // Posisi bayangan relatif terhadap container
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                        offset: Offset(0, 3),
                       ),
                     ],
                     shape: BoxShape.rectangle,
@@ -183,11 +181,10 @@ class ProfilePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), // Warna bayangan
-                        spreadRadius: 2, // Jarak penyebaran bayangan
-                        blurRadius: 5, // Jarak pelebaran bayangan
-                        offset: Offset(
-                            0, 3), // Posisi bayangan relatif terhadap container
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                        offset: Offset(0, 3),
                       ),
                     ],
                     shape: BoxShape.rectangle,
@@ -213,24 +210,21 @@ class ProfilePage extends StatelessWidget {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5), // Warna bayangan
-                    spreadRadius: 2, // Jarak penyebaran bayangan
-                    blurRadius: 5, // Jarak pelebaran bayangan
-                    offset: Offset(
-                        0, 3), // Posisi bayangan relatif terhadap container
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 5,
+                    offset: Offset(0, 3),
                   ),
                 ],
                 shape: BoxShape.rectangle,
-                color: Color.fromARGB(255, 236, 217, 6), // Warna latar belakang
+                color: Color.fromARGB(255, 236, 217, 6),
               ),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors
-                      .transparent, // Menghilangkan latar belakang ElevatedButton
-                  elevation: 0, // Menghilangkan bayangan
+                  primary: Colors.transparent,
+                  elevation: 0,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(
-                        10.0), // Mengatur sudut melengkung
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
                 ),
                 onPressed: () {
@@ -252,7 +246,7 @@ class ProfilePage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 60,
-        color: Color.fromRGBO(95, 165, 180, 1), // Warna latar belakang navbar
+        color: Color.fromRGBO(95, 165, 180, 1),
         child: Container(
           height: 5, // Tinggi navbar
           child: Row(
@@ -270,16 +264,14 @@ class ProfilePage extends StatelessWidget {
               ),
               IconButton(
                 onPressed: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (context) => JadwalDokter()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => JadwalDokter()));
                 },
                 icon: Icon(Icons.calendar_month),
                 color: Colors.white,
               ),
               IconButton(
-                onPressed: () {
-                  // Aksi tombol ketiga
-                },
+                onPressed: () {},
                 icon: Icon(Icons.person),
                 color: Colors.white,
               ),

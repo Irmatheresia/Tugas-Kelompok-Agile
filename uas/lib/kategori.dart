@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas/jadwal.dart';
 import 'package:uas/profile.dart';
 
 class DoctorSearchPage extends StatefulWidget {
@@ -190,8 +191,8 @@ class _DoctorSearchPageState extends State<DoctorSearchPage> {
           Expanded(
             child: ElevatedButton(
               onPressed: () {
-                // Navigator.push(context,
-                //     MaterialPageRoute(builder: (context) => JadwalDokter()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => JadwalDokter()));
               },
               child: ListView(
                 children: [
@@ -228,23 +229,21 @@ class _DoctorSearchPageState extends State<DoctorSearchPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 60,
-        color: Color.fromRGBO(95, 165, 180, 1), // Warna latar belakang navbar
+        color: Color.fromRGBO(95, 165, 180, 1),
         child: Container(
-          height: 5, // Tinggi navbar
+          height: 5,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconButton(
-                onPressed: () {
-                  // Aksi tombol pertama
-                },
+                onPressed: () {},
                 icon: Icon(Icons.home),
                 color: Colors.white,
               ),
               IconButton(
                 onPressed: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (context) => JadwalDokter()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => JadwalDokter()));
                 },
                 icon: Icon(Icons.calendar_month),
                 color: Colors.white,
@@ -295,10 +294,10 @@ class CategoryCard extends StatelessWidget {
         shape: BoxShape.rectangle,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5), // Warna bayangan
-            spreadRadius: 2, // Jarak penyebaran bayangan
-            blurRadius: 5, // Jarak pelebaran bayangan
-            offset: Offset(0, 6), // Posisi bayangan relatif terhadap container
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: Offset(0, 6),
           ),
         ],
       ),

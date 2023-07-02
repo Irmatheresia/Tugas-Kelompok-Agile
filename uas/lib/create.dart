@@ -117,8 +117,7 @@ class _CreatePageState extends State<CreatePage> {
                       controlAffinity: ListTileControlAffinity.leading,
                       contentPadding: EdgeInsets.zero,
                       activeColor: Colors.white,
-
-                      checkColor: Colors.black, // warna tanda centang
+                      checkColor: Colors.black,
                     ),
                   ),
                   // SizedBox(height: 5.0),
@@ -126,10 +125,8 @@ class _CreatePageState extends State<CreatePage> {
                     width: 250,
                     height: 50.0,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(
-                          255, 236, 217, 6), // Warna latar belakang
-                      borderRadius: BorderRadius.circular(
-                          10.0), // Mengatur sudut melengkung
+                      color: Color.fromARGB(255, 236, 217, 6),
+                      borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
